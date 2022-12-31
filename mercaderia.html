@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercaderia</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+
+    <div class="wrapper">
+        <header class="header-mobile">
+            <h1 class="logo">Casa Alvear</h1>
+            <button class="open-menu" id="open-menu">
+                <i class="bi bi-list"></i>
+            </button>
+        </header>
+        <aside>
+            <button class="close-menu" id="close-menu">
+                <i class="bi bi-x"></i>
+            </button>
+            <header>
+                <h1 class="logo">Casa Alvear</h1>
+            </header>
+            <nav>
+                <ul class="menu">
+                    <li>
+                        <button id="todos" class="boton-menu boton-categoria active"><i class="bi bi-hand-index-thumb-fill"></i> Todos los productos</button>
+                    </li>
+                    <li>
+                        <button id="Bazar" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> Bazar</button>
+                    </li>
+                    <li>
+                        <button id="Reposteria" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> Repostería</button>
+                    </li>
+                    <li>
+                        <button id="Otros" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> Otros</button>
+                    </li>
+                    <li>
+                        <a class="boton-menu boton-carrito" href="./carrito.html">
+                            <i class="bi bi-cart-fill"></i> Carrito <span id="numerito" class="numerito">0</span>
+                        </a>
+                    </li>
+                </ul>
+
+            </nav>
+            <div>
+                <p class="texto-footer-del-aside">No se realizan envios.</p>
+                <p class="texto-footer-del-aside">No se muestran precios, estos cambian de mes a mes</p>
+                <p class="texto-footer-del-aside">Este catalogo es exclusivamente de exposición</p>
+            </div>
+        </aside>
+        <main>
+            <h2 class="titulo-principal" id="titulo-principal">Todos los productos</h2>
+            <div id="contenedor-productos" class="contenedor-productos">
+                <!-- Esto se va a rellenar con JS -->
+            </div>
+        </main>
+    </div>
+    
+    <footer>
+        <nav class="navbar navbar-expand-lg navbar-dark navbar bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Casa Alvear</a><!--La idea es que solo recargue la página-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                <a class="nav-link active" href="index.html#subirDesdeElFooter">Home
+                </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="mercaderia.html">Mercaderia</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+        </nav>
+    </footer>
+
+
+    <script src="js/main.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
